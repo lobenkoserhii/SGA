@@ -9,10 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'HeroBG': "url('/gazda-app/public/Hero_bg.png')"
+      
+        
       },
+      screens: {
+        'TB': '640px',
+        'NPC': '1024px',
+        'PC': '1440px',
+      },
+      colors: {
+        'BG': '#1A1C39',
+        'Gold': '#D1B06B',
+        'WH': '#D7D7D7'
+
+          },
+      
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'], 
+            cormorant: ['Cormorant Garamond', 'serif'], 
+            academy: ['AcademyC-Bold', 'sans-serif'],
+          },
     },
   },
   plugins: [],
