@@ -10,12 +10,12 @@ export const NAV_LINKS = [
   export const Contacts = [
     {
       icon: "/Call_icon.svg",
-      title: "Call Us On:",
+      title: "WhatsApp:",
       content: "+1(647)-955-9590",
     },
     {
       icon: "/Mail_icon.svg",
-      title: "Email us:",
+      title: "Email:",
       content: "spartak@sgaimmigration.com",
     },
     
@@ -55,14 +55,14 @@ export const teamMembers = [
 
 export const visaOptions = [
   {
-    title: "Temporary Visa",
+    title: "Temporary Visas",
     description: "Experience Canada with Temporary Visas. Explore tourism, family visits, conferences, and more. Expert guidance for a seamless application process.",
     imageUrl: "watch.svg",
     altText: "Watch"
   },
   {
     title: "Permanent Residency",
-    description: "Secure your future in Canada through Permanent Residency. Expert assistance for skilled workers, entrepreneurs, and family sponsorships. Begin your journey today.",
+    description: "Secure your future in Canada through Permanent Residency. Expert assistance for skilled workers, entrepreneurs, family sponsorships and Humanitarian & Compassionate (H&C) grounds applications for Ukrainian nationals. Begin your journey today.",
     imageUrl: "trending-up.svg",
     altText: "Trending-up"
   },
@@ -127,9 +127,9 @@ export const services = [
     ]
   },
   {
-    title: "Consultation PR including CUAET",
+    title: "Consultation PR including ",
     method: "by ZOOM or Teams",
-    price: "$150",
+    price: "$200",
     duration: "1 hour",
     description: [
       "Calculation of Immigration points",
@@ -137,31 +137,15 @@ export const services = [
       "Customized strategy and short/long term action plan for your specific situation"
     ]
   },
-  {
-    title: "Consultation Business Immigration Start-up visa",
-    method: "by ZOOM or Teams",
-    price: "$250",
-    duration: "1 hour",
-    description: [
-      "Start-up visa and Provincial Entrepreneur streams",
-      "Eligibility requirements assessment - Business Immigration",
-      "Customized strategy and short/long term action plan for your specific situation"
-    ]
-  }
+
 ];
  
 export const additionalServices = [
-  {
-    title: "Consultation Family sponsorship (Ukrainian nationals)",
-    method: "by ZOOM or Teams",
-    price: "$400",
-    duration: "Duration: 1 hour",
-    description: ["Approximate document checklist"]
-  },
+
   {
     title: "Consultation Humanitarian program (Ukrainian nationals)",
     method: "by ZOOM or Teams",
-    price: "$500",
+    price: "$200",
     duration: "Duration: 1 hour",
     description: ["Customized document checklist"]
   }

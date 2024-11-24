@@ -44,7 +44,11 @@ function AboutUs() {
                   I'm Spartak Gabroshvili, <br /> a Immigration Consultant
                 </h2>
                 <p className='text-WH text-xl font-normal font-outfit'>
-                  At SGA Immigration and Legal services, we're your dedicated partners on your journey to immigrate to Canada. With years of experience, my team of immigration consultants is committed to transforming your dreams into reality. We comprehend the intricacies of the Canadian immigration system and provide expert guidance, ensuring you navigate the process with confidence.
+                Spartak Gabroshvili is a licensed Immigration Consultant, Paralegal, Notary Public, and an esteemed College Instructor at Ashton College. 
+With over five years of dedicated practice in immigration law, Spartak specializes in managing intricate immigration mattersspecifically focusing on Humanitarian and Compassionate (H&C) grounds cases. 
+In addition to his private practice, Spartak has served as a Program Integrity Specialist with the Ontario Government, bringing a deep understanding of compliance, policy enforcement, and the integrity of immigration programs to his work.
+Spartak holds a Master of Law from the Yaroslav Mudryi National Law University in Ukraine and is currently pursuing a PhD in International Law and Legal Studies. Additionally, Spartak is a graduate of Humber College in Canada, where he earned certifications as both a Paralegal and an Immigration Consultant.
+With his extensive knowledge, legal expertise, and commitment to excellence, Spartak Gabroshvili offers comprehensive and tailored immigration services to clients, navigating them through complex legal frameworks to achieve their goals
                 </p>
                 <div className="flex gap-4">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -70,10 +74,11 @@ function AboutUs() {
           
           <FadeInSection>
             <div className='flex flex-col gap-5 TB:gap-10 justify-center items-center mt-10'>
-              <div className="text-center text-4xl TB:text-[45px] text-white font-bold font-cormorant TB:leading-[51.57px]">Plan For Immigration</div>
+              <div className="text-center text-4xl TB:text-[45px] text-white font-bold font-cormorant TB:leading-[51.57px]">Immigration planning  </div>
               <img src="/IconP.svg" alt="Icon" className='h-[40px]' />
               <h2 className='font-cormorant font-normal text-white italic TB:text-3xl text-center'>
-                Since 2018, SGA Immigration and Legal services has served over 500+ clients on various immigration issues. Our mission is tailored to offer solutions that align with your unique needs and aspirations. Transparency, open communication, and staying current with immigration policies are at our core. From the first consultation to final approvals, we're with you, ensuring a smooth and successful immigration journey.
+              At SGA Immigration & Legal Services, we have successfully guided numerous clients through a wide range of immigration matters. Our mission is to provide customized, solution-oriented services that align with the specific needs and aspirations of each client. We prioritize transparency, maintain clear and open communication, and stay up-to-date with the latest developments in immigration law to ensure we offer the most relevant and effective advice.
+              From the initial consultation to the final approval, we are dedicated to supporting you throughout your entire immigration journey, ensuring a seamless and successful experience. Our commitment is to help you achieve your immigration goals with confidence and clarity.
               </h2>
             </div>
           </FadeInSection>

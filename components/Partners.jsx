@@ -6,14 +6,10 @@ const HeaderSection = () => (
   <div className='flex flex-col justify-center items-center'>
     <div className='max-w-[900px] text-center text-gray-900 text-[45px] font-bold font-cormorant leading-[51.57px]'>
       Achieve your Canadian immigration goals with our expert guidance
-      <div className='my-4 text-center text-[#909090] text-xl font-normal font-outfit border-gray-700'>
-        Contact us now to get started on your path to success!
-      </div>
+ 
     </div>
     
-    <a href="#" className="TB:w-[250px] TB:py-4 p-3 bg-Gold border-2 border-transparent hover:bg-transparent hover:border-Gold justify-center items-center gap-5 inline-flex">
-      <div className="text-gray-800 text-xl font-medium font-outfit capitalize">Book a Consultation</div>
-    </a>
+   
     <img src="/IconP.svg" alt="Icon" className='m-5 h-[40px]' />
   </div>
 );

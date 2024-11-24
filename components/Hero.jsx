@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <section className="relative  overflow-hidden">
-        {/* Видео фон */}
+        
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="/SGA_BG.mp4"
@@ -14,14 +14,14 @@ function Hero() {
           muted
           loop
           playsInline
-          poster="/Header.png" // Постер на случай, если видео не загрузится
+          poster="/Header.png" 
         ></video>
 
-        {/* Тонировка поверх видео */}
+        
         <div className="absolute top-0 left-0 w-full h-full bg-BG bg-opacity-70"></div>
 
-        {/* Задний фон для мобильных устройств */}
-        <div className="TB:hidden absolute top-0 left-0 w-full h-full bg-[url('/Header_mob.png')] bg-cover bg-no-repeat bg-center"></div>
+  
+        <div className="TB:hidden absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center"></div>
 
         <FadeInSection>
           <Layout />
@@ -30,7 +30,7 @@ function Hero() {
             <div className="flex flex-col justify-center items-start mt-[80px] gap-10">
               <img src="/Sep.svg" alt="Sep" className="w-[95px] h-[44px]" />
               <h1 className="text-white w-[300px] TB:w-full text-2xl TB:text-[32px] font-normal font-outfit">
-                Our expert immigration consultants <br /> are ready to assist you
+                Our expert Immigration consultant <br /> and Paralegal is ready to assist you
               </h1>
               <a
                 href="#"

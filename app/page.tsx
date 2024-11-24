@@ -16,12 +16,12 @@ export default function Home() {
     <>
       <Hero />
       <AboutUs />
-      <Team />
+      
       <Immigration />
       <FadeInSection><Partners /></FadeInSection>
       <Testimonial />
       <FadeInSection><Plan /></FadeInSection>
-      <Consultation />
+      
       <Form />
       <Footer />
     </>

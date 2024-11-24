@@ -17,7 +17,7 @@ const Footer = () => {
           <div className='flex whitespace-nowrap flex-col gap-2 font-outfit font-normal text-sm TB:text-xl'>
              <p>7 Mabelle Ave., M9A0C9, Ontario, Canada</p>
             <p>Email: spartak@sgaimmigration.com</p>
-            <p>Phone: +1(647)-955-9590</p>
+            <p>WhatsApp: +1(647)-955-9590</p>
           </div>
         
           </div>
