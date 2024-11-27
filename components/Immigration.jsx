@@ -9,7 +9,7 @@ function Immigration() {
       <FadeInSection>
         <div className="flex flex-col TB:flex-row justify-between gap-10">
           <div className='flex flex-col gap-5 '>
-            <div className="w-[400px] text-white text-start text-[45px] font-bold font-cormorant leading-[51.57px]">Trending Canadian Immigration</div>
+            <div className=" text-white text-start text-[45px] font-bold font-cormorant leading-[51.57px]">Trending Canadian Immigration</div>
            
           </div>
           <div className="flex items-center justify-center text-zinc-300 text-xl font-normal font-outfit TB:border-l-2 border-gray-700 TB:pl-10">
