@@ -21,7 +21,6 @@ export default function Home() {
       <FadeInSection><Partners /></FadeInSection>
       <Testimonial />
       <FadeInSection><Plan /></FadeInSection>
-      
       <Form />
       <Footer />
     </>
