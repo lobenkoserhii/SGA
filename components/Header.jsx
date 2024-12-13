@@ -9,7 +9,7 @@ function Header() {
             <Link href="/" legacyBehavior>
               <img src="/SGA_logo.svg" alt="logo" className='min-w-[125px] max-w-[180px] cursor-pointer' />
             </Link>
-            <a href="#" className="px-7 py-5 bg-white bg-opacity-10 justify-center items-center inline-flex hover:bg-Gold hidden NPC:inline-flex">
+            <a href="#contact-us" className="px-7 py-5 bg-white bg-opacity-10 justify-center items-center inline-flex hover:bg-Gold hidden NPC:inline-flex">
               <div className="text-white text-[22px] font-normal font-outfit">Book a Consultation</div>
             </a>
           </div>

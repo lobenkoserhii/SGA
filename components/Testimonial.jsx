@@ -3,8 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { testimonials } from "@/constants"; 
 import FadeInSection from '../components/FadeInSection'; 
 
-const SingleTestimonial = ({ name, position, quote, photoUrl, index }) => {
+const SingleTestimonial = ({ name, quote, index }) => {
     const [isReversed, setIsReversed] = useState(index % 2 !== 0);
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const WORD_LIMIT = 20; // Количество слов для ограничения
 
     useEffect(() => {
       const handleResize = () => {
@@ -16,20 +19,59 @@ const SingleTestimonial = ({ name, position, quote, photoUrl, index }) => {
       return () => window.removeEventListener('resize', handleResize);
     }, [index]);
 
+    const toggleExpanded = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    const getPreviewTextWithButton = (text, wordLimit) => {
+        const words = text.split(" ");
+        if (words.length > wordLimit) {
+            const preview = words.slice(0, wordLimit).join(" ");
+            return (
+                <>
+                    {preview}{" "}
+                    <span className="text-gray-300">...</span>{" "}
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            toggleExpanded();
+                        }}
+                        className="text-Gold text-xs TB:text-[14px] font-medium font-outfit capitalize"
+                    >
+                        Read More
+                    </a>
+                </>
+            );
+        }
+        return text;
+    };
+
     const userInfo = (
-      <div className="flex flex-row items-start justify-start text-start self-start m-2">
-        <img src={photoUrl} alt={name} className="w-20 h-20 rounded-full object-cover object-center"/> 
-        <div className='flex flex-col m-3'>
-          <h5 className="font-cormorant text-xl TB:text-3xl text-white font-bold">{name}</h5>
-          <p className="font-outfit text-sm TB:text-xl font-normal text-white">{position}</p>
-        </div>
+      <div className="flex flex-col justify-start items-start text-start self-start m-2">
+        <h5 className="font-cormorant text-xl TB:text-3xl text-white font-bold">{name}</h5>
       </div>
     );
 
     const quoteBlock = (
-      <div className={`bg-gray-800 text-white py-12 px-4 ${isReversed ? 'rounded-tl-lg' : 'rounded-bl-lg'} flex flex-col items-center shadow-lg`}>
-        <img src="/k.png" alt="Icon" className='m-2 self-start h-[16px]' />
-        <blockquote className="text-sm TB:text-xl font-normal italic">“{quote}”</blockquote>
+      <div className={`bg-gray-800 text-white py-12 px-4 flex flex-col items-center shadow-lg`}>
+        <blockquote className="text-sm TB:text-xl font-normal italic">
+          {isExpanded || quote.split(" ").length <= WORD_LIMIT
+            ? quote
+            : getPreviewTextWithButton(quote, WORD_LIMIT)}
+        </blockquote>
+        {isExpanded && (
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              toggleExpanded();
+            }}
+            className="text-Gold text-xs TB:text-[14px] font-medium font-outfit capitalize mt-2"
+          >
+            Read Less
+          </a>
+        )}
       </div>
     );
 
@@ -46,7 +88,7 @@ const Testimonials = () => {
   
     useEffect(() => {
       const updateTestimonials = () => {
-        setDisplayedTestimonials(testimonials.slice(-4)); 
+        setDisplayedTestimonials(testimonials.slice(0, 4)); 
       };
   
       updateTestimonials();
@@ -58,7 +100,6 @@ const Testimonials = () => {
         <div className="mx-auto max-w-[1440px] p-10 py-20">
           <div className='flex flex-col gap-5 justify-center items-center'>
             <div className="text-white text-center text-[45px] font-bold font-cormorant leading-[51.57px]">Client Opinions & Reviews</div>
-            <img src="/IconP.svg" alt="Icon" className='h-[40px]' />
             <div className="grid grid-cols-1 TB:grid-cols-2 PC:grid-cols-4 gap-6 TB:mt-10">
               {displayedTestimonials.map((testimonial, index) => (
                 <SingleTestimonial key={index} {...testimonial} index={index} />
@@ -69,7 +110,6 @@ const Testimonials = () => {
         </FadeInSection>
       </div>
     );
-  }
+}
 
 export default Testimonials;
-

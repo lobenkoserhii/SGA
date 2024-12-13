@@ -22,7 +22,7 @@ const ServiceCard = ({ service }) => (
           ))}
         </ul>
       </div>
-      <a href="#" className="border-Gold border-[1px] hover:bg-Gold py-5 mt-5">
+      <a href="#contact-us" className="border-Gold border-[1px] hover:bg-Gold py-5 mt-5">
         <div className='font-outfit text-white font-bold'>Get Started</div>
       </a>
     </div>
@@ -39,20 +39,6 @@ const ServiceCard = ({ service }) => (
         <div className="grid grid-cols-1 NPC:grid-cols-3 gap-5 p-10">
           {services.map((service, index) => <ServiceCard key={index} service={service} />)}
         </div>
-        <div className='flex flex-col gap-5 justify-center items-center'>
-          <div className="text-center text-[45px] font-bold font-cormorant leading-[51.57px]">Temporary Plan For Immigration 
-</div>
-          <img src="/IconP.svg" alt="Icon" className='h-[40px]' />
-        </div>
-        <div className="grid grid-cols-1 NPC:grid-cols-6 gap-5 p-10">
-        <div className="col-span-1"></div> 
-        {additionalServices.map((service, index) => (
-          <div className="col-span-2" key={index}>
-            <ServiceCard service={service} />
-          </div>
-        ))}
-        <div className="col-span-1"></div> 
-      </div>
     </div>
     );
   }

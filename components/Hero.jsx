@@ -33,7 +33,7 @@ function Hero() {
                 Our expert Immigration consultant <br /> and Paralegal is ready to assist you
               </h1>
               <a
-                href="#"
+                href="#contact-us"
                 className="TB:w-[230px] TB:py-4 p-3 bg-Gold justify-center items-center gap-2.5 inline-flex"
               >
                 <div className="text-gray-800 text-xl TB:text-[22px] font-medium font-outfit capitalize">

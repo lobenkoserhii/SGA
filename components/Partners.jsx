@@ -28,10 +28,10 @@ const ClientsAndCases = () => (
 );
 
 const PartnersComponent = () => (
-  <div className='flex justify-center items-center gap-5'>
-    <img src="/IconP.svg" alt="Icon" className='m-5 h-[40px]' />
+  <div className='flex justify-center items-center gap-5 '>
+    <img src="/IconP.svg" alt="Icon" className='TB:m-5 TB:h-[40px] m-2 h-[30px]' />
     <div className='text-center text-zinc-900 text-[45px] font-bold font-cormorant leading-[51-57px]'>The Partners</div>
-    <img src="/IconP.svg" alt="Icon" className='m-5 h-[40px]' />
+    <img src="/IconP.svg" alt="Icon" className='TB:m-5 TB:h-[40px] m-2 h-[30px]' />
   </div>
 );
 

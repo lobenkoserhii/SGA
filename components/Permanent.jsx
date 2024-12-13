@@ -4,7 +4,7 @@ import FadeInSection from '../components/FadeInSection';
 
 function Permanent({ highlightText, permanentHighlightPhrases }) {
   return (
-    <div className="">
+    <div id="permanent-residency" className="">
       <div className="grid grid-cols-1 TB:grid-cols-2">
         <div className="p-10 flex flex-col justify-start items-start">
         <FadeInSection>
@@ -12,7 +12,7 @@ function Permanent({ highlightText, permanentHighlightPhrases }) {
           <img src="/IconB.svg" alt="Icon" className='my-5 h-[44px]' />
 
           {permanentResidencyTypes.map((program, index) => (
-            <div key={index} className="pt-5">
+            <div key={index} id="permanent-residency" className=" pt-5">
               <h2 className="text-BG text-2xl font-bold">{program.title}</h2>
               <p className='text-BG  font-normal font-outfit'>
                 <span className='text-BG font-bold'>- Purpose:</span> {program.details.Purpose}

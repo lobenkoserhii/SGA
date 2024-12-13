@@ -1,8 +1,8 @@
 import React from 'react';
+import Link from "next/link";
 import Layout from '../components/Layout';
 import { services, additionalServices } from "@/constants";
 import Consultation from "../components/Consultation";
-import Form from "../components/Form";
 import Footer from "../components/Footer";
 import FadeInSection from '../components/FadeInSection';
 
@@ -41,9 +41,11 @@ const ServiceCard = ({ service }) => (
         ))}
       </ul>
     </div>
-    <a href="#" className="border-Gold border-[1px] hover:bg-Gold py-5 mt-5">
-      <div className="font-outfit text-white font-bold">Get Started</div>
-    </a>
+    <Link href="/#contact-us">
+  <div className="border-Gold border-[1px] hover:bg-Gold py-5 mt-5">
+    <div className="font-outfit text-white font-bold">Get Started</div>
+  </div>
+</Link>
   </div>
 );
 
@@ -77,27 +79,9 @@ function Services() {
           </div>
         </FadeInSection>
         <div className="flex flex-col gap-5 justify-center items-center">
-          
-            <div className="text-white text-center text-[45px] font-bold font-cormorant leading-[51.57px]">
-              Temporary Plan For Immigration
-            </div>
-            <img src="/IconP.svg" alt="Icon" className="mt-5 h-[50px]" />
-          
-        </div>
-        <div className="grid grid-cols-1 NPC:grid-cols-6 gap-5 p-10">
-          <div className="col-span-1"></div>
-          {additionalServices.map((service, index) => (
-            <div className="col-span-2" key={index}>
-              <FadeInSection>
-                <ServiceCard service={service} />
-              </FadeInSection>
-            </div>
-          ))}
-          <div className="col-span-1"></div>
         </div>
       </div>
       <Consultation />
-      <Form />
       <Footer />
     </div>
   );

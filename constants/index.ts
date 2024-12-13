@@ -12,14 +12,16 @@ export const NAV_LINKS = [
       icon: "/Call_icon.svg",
       title: "WhatsApp:",
       content: "+1(647)-955-9590",
+      link: "https://wa.me/16479559590",
     },
     {
       icon: "/Mail_icon.svg",
       title: "Email:",
       content: "spartak@sgaimmigration.com",
+      link: "mailto:spartak@sgaimmigration.com",
     },
-    
   ];
+  
 export const teamMembers = [
   {
     name: 'Serhii Lobenko',
@@ -58,61 +60,64 @@ export const visaOptions = [
     title: "Temporary Visas",
     description: "Experience Canada with Temporary Visas. Explore tourism, family visits, conferences, and more. Expert guidance for a seamless application process.",
     imageUrl: "watch.svg",
-    altText: "Watch"
+    altText: "Watch",
+    link: "/Programs#temporary-visas"
   },
   {
     title: "Permanent Residency",
     description: "Secure your future in Canada through Permanent Residency. Expert assistance for skilled workers, entrepreneurs, family sponsorships and Humanitarian & Compassionate (H&C) grounds applications for Ukrainian nationals. Begin your journey today.",
     imageUrl: "trending-up.svg",
-    altText: "Trending-up"
+    altText: "Trending-up",
+    link: "/Programs#permanent-residency"
   },
   {
-    title: ["Provincial Nominee Programs"],
+    title: "Provincial Nominee Programs",
     description: "Consult with our experts for a smooth journey through Canada's Provincial Program. Let us guide you towards your Canadian dreams. Get started today!",
     imageUrl: "heart.svg",
-    altText: "Heart"
+    altText: "Heart",
+    link: "/Programs#provincial-nominee-programs"
   }
 ];
 
 export const testimonials = [
   {
-    name: "Minci Pall",
-    position: "Consultant",
-    quote: "There are of Lorem Ipsum available, but the majority have su alteration in some form, by injected or which don’t look even slightly believable.",
-    photoUrl: "minci-pall.png" 
+    name: "Анатолий Харченко",
+    quote: "Обратился в SGA Immigration за консультацией по иммиграционным вопросам для себя и своей семьи. Сотрудники компании продемонстрировали высокий уровень профессионализма и внимания к деталям. Я был приятно удивлен, насколько чётко и ясно мне объяснили все этапы процесса, а также предоставили конкретные рекомендации, учитывая мои личные обстоятельства. Особенно хочу отметить работу с владельцем Спартаком, который не только компетентно проконсультировал, но и предложил несколько вариантов решения моего вопроса. Его подход к клиентам заслуживает отдельной похвалы — всегда на связи, готов выслушать и дать качественные советы.",
   },
   {
-    name: "Nattasha",
-    position: "Junior Lawyer",
-    quote: "There are of Lorem Ipsum available, but the majority have su alteration in some form, by injected or which don’t look even slightly believable.",
-    photoUrl: "Nattasha.png"
+    name: "Anastasiia Lavrinenko",
+    quote: "I had an online consultation. Spartak answered all my questions, gave me advice and the necessary contacts. I recommend!",
   },
   {
-    name: "Julia Rose",
-    position: "Consultant",
-    quote: "There are of Lorem Ipsum available, but the majority have su alteration in some form, by injected or which don’t look even slightly believable.",
-    photoUrl: "julia-rose.png"
+    name: "Daria Dickson",
+    quote: "I had a great experience with SGA Immigration and Legal Services! The team was incredibly professional, responsive, and knowledgeable about immigration law. Spartak is the best! He worked quickly and efficiently, making what could have been a stressful process feel seamless. I truly felt supported throughout the entire process. I highly recommend SGA Immigration and Legal Services to anyone seeking reliable and top-notch assistance with their immigration needs!",
   },
   {
-    name: "John David",
-    position: "Designer",
-    quote: "There are of Lorem Ipsum available, but the majority have su alteration in some form, by injected or which don’t look even slightly believable.",
-    photoUrl: "john-david.png"
+    name: "Maryna Kalinina",
+    quote: "Spartak helped with my parent’s application, was very knowledgeable and answered all questions. I highly recommend his services!",
   },
   {
-    name: "Rinci pall",
-    position: "Consultant",
-    quote: "There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.when an unknown printer took a galley of type and scrambled.",
-    photoUrl: "Rinci.png"
+    name: "Natalie Vakhnytska",
+    quote: "Я абсолютно задоволена послугами Спартака в питаннях імміграції. Він був надзвичайно уважним та детально пояснив усі можливі варіанти, розглядаючи їхні переваги та недоліки, що допомогло мені обрати найбільш підходящий варіант для моїх батьків.",
   },
   {
-    name: "Peeter Park",
-    position: "Consultant",
-    quote: "There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.when an unknown printer took a galley of type and scrambled.",
-    photoUrl: "Peeter.png"
+    name: "coco konyto",
+    quote: "I recommend Mr. Spartak services, he is very professional and has a lot of expertise in PR applications.",
   },
-
+  {
+    name: "Martin Simonin",
+    quote: "Excellente service! Très responsable, Monsieur Spartak possède beaucoup d’expérience et facilite le processus.",
+  },
+  {
+    name: "Bohdan Shakshuiev",
+    quote: "Дякую тобі Спартак за поміч в подачі по програмі Express entry. Дуже професійно та швидко віднайшов шлях імміграції для мене під час консультації. За 5 місяців отримав PR з ним! Дуже рекомендую!",
+  },
+  {
+    name: "Hanna Vientseva",
+    quote: "I am highly recommending Spartak Gabroshvili for your immigration services. He helped us to receive Permanent Residency under H&C grounds for Ukrainian National.",
+  },
 ];
+
 
 export const services = [
   {
@@ -137,18 +142,19 @@ export const services = [
       "Customized strategy and short/long term action plan for your specific situation"
     ]
   },
-
-];
- 
-export const additionalServices = [
-
   {
     title: "Consultation Humanitarian program (Ukrainian nationals)",
     method: "by ZOOM or Teams",
     price: "$200",
     duration: "Duration: 1 hour",
     description: ["Customized document checklist"]
-  }
+  },
+
+];
+ 
+export const additionalServices = [
+
+  
 ];
 
 export const visaTypes = [

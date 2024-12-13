@@ -6,7 +6,7 @@ import FadeInSection from '../components/FadeInSection';
 import Form from "../components/Form"
 import Footer from "../components/Footer"
 
-const SingleTestimonial = ({ name, position, quote, photoUrl, index }) => {
+const SingleTestimonial = ({ name, quote, index }) => {
     const [isReversed, setIsReversed] = useState(index % 2 !== 0);
 
     useEffect(() => {
@@ -20,21 +20,15 @@ const SingleTestimonial = ({ name, position, quote, photoUrl, index }) => {
     }, [index]);
 
     const userInfo = (
-      <div className="flex flex- justify-between items-start text-start m-2 w-full">
-        <img src={photoUrl} alt={name} className="w-20 h-20 rounded-full object-cover object-center"/> 
+      <div className="flex flex-col justify-start items-start text-start m-2 w-full">
         <div className="flex flex-col m-3 flex-1">
           <h5 className="font-cormorant text-xl TB:text-3xl text-white font-bold">{name}</h5>
-          <p className="font-outfit text-sm TB:text-xl font-normal text-white">{position}</p>
-        </div>
-        <div className="h-[50px] w-[50px] bg-[#1F2732] flex justify-center items-center rounded-full">
-          <img src="/k.png" alt="Icon" className="h-[20px]" />
         </div>
       </div>
     );
 
     const quoteBlock = (
       <div className=" text-white py-6 px-6 flex flex-col items-start ">
-        <img src="/quote-icon.svg" alt="Quote Icon" className="absolute top-4 right-4 h-6" />
         <blockquote className="text-sm font-normal italic">“{quote}”</blockquote>
       </div>
     );
@@ -52,7 +46,7 @@ const Testimonials = () => {
   
     useEffect(() => {
       const updateTestimonials = () => {
-        setDisplayedTestimonials(testimonials.slice(-8)); 
+        setDisplayedTestimonials(testimonials.slice(-20)); 
       };
   
       updateTestimonials();

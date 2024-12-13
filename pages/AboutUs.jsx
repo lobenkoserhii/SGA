@@ -64,7 +64,7 @@ With his extensive knowledge, legal expertise, and commitment to excellence, Spa
                     <img src="/Ilinkedin.svg" alt="LinkedIn" className="h-6 w-6 min-h-[60px]" />
                   </a>
                 </div>
-                <a href="#" type="submit" className="mt-4 bg-white hover:bg-Gold text-black font-bold py-4 px-8">
+                <a href="#contact-us" type="submit" className="mt-4 bg-white hover:bg-Gold text-black font-bold py-4 px-8">
                   Get An Appointment
                 </a>
               </div>
@@ -94,7 +94,6 @@ With his extensive knowledge, legal expertise, and commitment to excellence, Spa
       </div>
       
        <Experiance />
-       <FadeInSection><Team /></FadeInSection>
       <Testimonial />
       <FadeInSection><Partners /></FadeInSection>
       <Footer />

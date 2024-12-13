@@ -1,6 +1,6 @@
 import React from 'react';
 import { citizenshipTypes } from "@/constants";
-import FadeInSection from '../components/FadeInSection';
+import FadeInSection from './FadeInSection';
 
 function splitAndHighlight(text) {
   const phrasesToHighlight = [
@@ -27,8 +27,8 @@ function splitAndHighlight(text) {
   ));
 }
 
-const Citizenship = () => (
-  <div className="">
+const PNP = () => (
+  <div id="provincial-nominee-programs" className="">
     <div className="grid grid-cols-1 TB:grid-cols-2">
       <div className="bg-[url('/Programs3.jpeg')] bg-cover bg-no-repeat bg-center"></div>
       <div className="p-10 bg-Gold flex flex-col justify-start items-start">
@@ -80,9 +80,7 @@ const Citizenship = () => (
             <p className='text-BG pt-5  font-normal font-outfit'>
               Understanding the specifics of each PNP and its eligibility requirements is essential for prospective applicants. It is highly recommended to consult with our immigration professional to navigate the complexities of Provincial Nominee Programs effectively.
             </p>
-            
           </div>
-          
         ))}
         </FadeInSection>
       </div>
@@ -90,4 +88,4 @@ const Citizenship = () => (
   </div>
 );
 
-export default Citizenship;
+export default PNP;
