@@ -1,42 +1,30 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Consultation from "../components/Consultation";
-import Footer from "../components/Footer";
 import FadeInSection from '../components/FadeInSection';
 import { InlineWidget } from 'react-calendly';
 
-function Contact() {
+function Form() {
   return (
-    <div className="bg-[url('/AboutUSBG.jpg')] w-full bg-cover bg-no-repeat bg-center">
+    <div id="contact-us" className="bg-[url('/BGForm.jpg')] w-full font-outfit font-normal text-xl min-h-screen bg-cover bg-no-repeat bg-center flex items-center justify-center">
       <FadeInSection>
-        <Layout />
-        <div className="mx-auto max-w-[1440px] min-h-[300px] px-10 text-center flex flex-col">
-          <h1 className="text-5xl font-cormorant font-normal text-white">Contact Us</h1>
-          <img src="/IconP.svg" alt="Icon" className="mt-5 h-[50px]" />
-        </div>
-      </FadeInSection>
-
-      {/* React-Calendly Inline Widget */}
-      <div className="bg-BG w-full font-outfit font-normal text-xl bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
-        <FadeInSection>
-          <div className="w-full max-w-[1024px] bg-[#1F2732] text-white p-8 rounded-lg shadow-lg">
+        <div className="bg-opacity-95 bg-BG text-white p-8 my-5 w-full max-w-[1440px] rounded-lg shadow-lg">
+          <div className="w-full" style={{ height: '80vh', minHeight: '600px' }}>
             <InlineWidget
-              url="https://calendly.com/s-v-lobenko/sga"
-             
+              url="https://calendly.com/s-v-lobenko/SGA"
               pageSettings={{
                 backgroundColor: '#1A1C39',
                 textColor: '#ffffff',
                 primaryColor: '#D1B06B',
               }}
+              styles={{
+                height: '100%',
+                width: '100%',
+              }}
             />
           </div>
-        </FadeInSection>
-      </div>
-
-      <Consultation />
-      <Footer />
+        </div>
+      </FadeInSection>
     </div>
   );
 }
 
-export default Contact;
+export default Form;
