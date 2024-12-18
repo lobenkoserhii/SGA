@@ -123,13 +123,13 @@ export const services = [
   {
     title: "Consultation Visitor, Study, Work",
     method: "by phone",
-    price: "$100",
-    
+    price: "$150",
     duration: "30 minutes",
     description: [
       "Identifying temporary resident visa eligibility (visitor, study, work)",
       "Building strategy for visitor, student, worker transferring to Permanent residence, general streams"
-    ]
+    ],
+    link: "https://calendly.com/spartak-sgaimmigration/immigration-consultation-over-the-phone"
   },
   {
     title: "Consultation PR including ",
@@ -140,16 +140,17 @@ export const services = [
       "Calculation of Immigration points",
       "PR program eligibility assessment",
       "Customized strategy and short/long term action plan for your specific situation"
-    ]
+    ],
+    link: "https://calendly.com/spartak-sgaimmigration/immigration-consultion"
   },
   {
     title: "Consultation Humanitarian program (Ukrainian nationals)",
     method: "by ZOOM or Teams",
     price: "$200",
-    duration: "Duration: 1 hour",
-    description: ["Customized document checklist"]
-  },
-
+    duration: "1 hour",
+    description: ["Customized document checklist"],
+    link: "https://calendly.com/spartak-sgaimmigration/immigration-consultion"
+  }
 ];
  
 export const additionalServices = [

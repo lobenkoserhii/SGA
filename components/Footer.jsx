@@ -32,16 +32,16 @@ const Footer = () => {
           <div className='flex flex-row justify-between items-center'>
             <h3 className="font-outfit font-normal TB:text-xl text-base text-Gold mr-2">Follow:</h3>
             <div className="flex gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/18WJSFQJyj/" target="_blank" rel="noopener noreferrer">
                 <img src="/IFb.svg" alt="Facebook" className="h-6 w-6 min-h-[60px]"/>
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtube.com/@sga_immigration?si=mkoH8hGWbobdV-nx" target="_blank" rel="noopener noreferrer">
                 <img src="/iYouTube.svg" alt="YouTube" className="h-6 w-6 min-h-[60px]"/>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sgaimmigration?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
                 <img src="/IInsta.svg" alt="Instagram" className="h-6 w-6 min-h-[60px]"/>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/spartak-gabroshvili-564b99158?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
                 <img src="/Ilinkedin.svg" alt="LinkedIn" className="h-6 w-6 min-h-[60px]"/>
               </a>
             </div>

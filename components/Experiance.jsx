@@ -7,12 +7,13 @@ function Experience() {
   const progressKnobRefs = useRef([]);
 
   const progressBarData = [
-    { label: "Express Entry", percentage: 75 },
-    { label: "Family Sponsorship", percentage: 80 },
-    { label: "Study Permits and Work Permits", percentage: 75 },
-    { label: "Visitor Visas", percentage: 90 },
+    { label: "Express Entry", percentage: 95 },
+    { label: "Family Sponsorship", percentage: 90 },
+    { label: "Study Permits and Work Permits", percentage: 80 },
+    { label: "Visitor Visas", percentage: 80 },
     { label: "Provincial Nominee Programs (PNPs)", percentage: 90 },
-    { label: "Citizenship Applications", percentage: 90 }
+    { label: "Citizenship Applications", percentage: 100 },
+    { label: "H&C applications", percentage: 90 }
   ];
 
   useEffect(() => {
