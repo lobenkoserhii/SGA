@@ -5,8 +5,8 @@ function Form() {
     name: '',
     email: '',
     phone: '',
-    address: '',
-    repair: '',
+    subject: '',
+    message: '',
   });
   const [status, setStatus] = useState('');
 
@@ -27,7 +27,8 @@ function Form() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send email');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send email');
       }
 
       const data = await response.json();
@@ -36,8 +37,8 @@ function Form() {
         name: '',
         email: '',
         phone: '',
-        address: '',
-        repair: '',
+        subject: '',
+        message: '',
       });
     } catch (error) {
       console.error('Error:', error.message);
@@ -47,11 +48,10 @@ function Form() {
 
   return (
     <div className="bg-[url('/BGForm.jpg')] w-full font-outfit font-normal text-xl h-[800px] bg-cover bg-no-repeat bg-center flex items-center justify-center">
-      <div className="bg-opacity-95 bg-BG text-white p-8 NPC:w-[1024px] font-outfit font-normal text-xl">
-        
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="bg-opacity-95 bg-BG text-white p-8 w-full max-w-4xl rounded-md shadow-md">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-lg font-medium">
+            <label htmlFor="name" className="block text-lg font-medium mb-1">
               Full Name *
             </label>
             <input
@@ -61,11 +61,11 @@ function Form() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full font-outfit font-normal text-xl p-2 bg-transparent border-b border-[#3A4553] outline-none focus:outline-none focus:border-Gold"
+              className="w-full font-outfit font-normal text-lg p-2 bg-transparent border-b border-gray-400 focus:border-Gold outline-none"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-lg font-medium">
+            <label htmlFor="email" className="block text-lg font-medium mb-1">
               Email Address *
             </label>
             <input
@@ -75,11 +75,11 @@ function Form() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full font-outfit font-normal text-xl p-2 bg-transparent border-b border-[#3A4553] outline-none focus:outline-none focus:border-Gold"
+              className="w-full font-outfit font-normal text-lg p-2 bg-transparent border-b border-gray-400 focus:border-Gold outline-none"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-lg font-medium">
+            <label htmlFor="phone" className="block text-lg font-medium mb-1">
               Phone Number *
             </label>
             <input
@@ -89,47 +89,46 @@ function Form() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full font-outfit font-normal text-xl p-2 bg-transparent border-b border-[#3A4553] outline-none focus:outline-none focus:border-Gold"
+              className="w-full font-outfit font-normal text-lg p-2 bg-transparent border-b border-gray-400 focus:border-Gold outline-none"
             />
           </div>
           <div>
-            <label htmlFor="address" className="block text-lg font-medium">
-              Address *
+            <label htmlFor="subject" className="block text-lg font-medium mb-1">
+              Subject
             </label>
             <input
               type="text"
-              id="address"
-              name="address"
-              value={formData.address}
+              id="subject"
+              name="subject"
+              value={formData.subject}
               onChange={handleChange}
-              required
-              className="w-full font-outfit font-normal text-xl p-2 bg-transparent border-b border-[#3A4553] outline-none focus:outline-none focus:border-Gold"
+              className="w-full font-outfit font-normal text-lg p-2 bg-transparent border-b border-gray-400 focus:border-Gold outline-none"
             />
           </div>
           <div className="md:col-span-2">
-            <label htmlFor="repair" className="block text-lg font-medium">
-              Repair Needed *
+            <label htmlFor="message" className="block text-lg font-medium mb-1">
+              Your Message *
             </label>
             <textarea
-              id="repair"
-              name="repair"
-              value={formData.repair}
+              id="message"
+              name="message"
+              value={formData.message}
               onChange={handleChange}
               required
               rows="4"
-              className="w-full font-outfit font-normal text-xl p-2 bg-transparent border-b border-[#3A4553] outline-none focus:outline-none focus:border-Gold"
+              className="w-full font-outfit font-normal text-lg p-2 bg-transparent border-b border-gray-400 focus:border-Gold outline-none"
             ></textarea>
           </div>
           <div className="md:col-span-2 flex justify-center">
             <button
               type="submit"
-              className="mt-4 bg-white hover:bg-Gold text-black font-bold py-4 px-8"
+              className="mt-4 bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-Gold hover:text-white transition-colors duration-300"
             >
-              Submit
+              Get An Appointment
             </button>
           </div>
         </form>
-        {status && <p className="text-center mt-4 font-semibold">{status}</p>}
+        {status && <p className="text-center mt-4 font-semibold text-Gold">{status}</p>}
       </div>
     </div>
   );

@@ -19,9 +19,9 @@ export default function Home() {
       
       <Immigration />
       <FadeInSection><Partners /></FadeInSection>
-      <Testimonial />
+      <FadeInSection><Testimonial /></FadeInSection>
       <FadeInSection><Plan /></FadeInSection>
-      <Form />
+      <FadeInSection><Form /></FadeInSection>
       <Footer />
     </>
   );

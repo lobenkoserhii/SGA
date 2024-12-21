@@ -9,18 +9,18 @@ const ServiceCard = ({ service }) => (
           {service.title}
         </h3>
       </div>
-      <div className="font-outfit text-Gold text-sm mt-2 mb-4 border-b border-[#3A4553]">
+      <div className="font-outfit text-Gold text-sm TB:text-base  mt-2 mb-4 border-b border-[#3A4553]">
         {service.method}
       </div>
 
       <div className="flex flex-col items-center">
-        <div className="font-outfit text-Gold text-lg text-4xl font-bold">{service.price}</div>
-        <div className="font-outfit text-WH bg-[#1F2732] text-sm mb-4 px-3 py-1">Per Case</div>
+        <div className="font-outfit text-Gold text-xl TB:text-2xl  font-bold">{service.price}</div>
+        <div className="font-outfit text-WH bg-[#1F2732] text-sm TB:text-base mb-4 px-3 py-1">Per Case</div>
       </div>
-      <div className="font-outfit text-WH text-sm mb-4 p-4 border-y border-[#3A4553]">
+      <div className="font-outfit text-WH text-sm TB:text-base  mb-4 p-4 border-y border-[#3A4553]">
         {service.duration}
       </div>
-      <ul className="font-outfit text-WH text-sm mb-4">
+      <ul className="font-outfit text-WH text-sm TB:text-base  mb-4">
         {service.description.map((item, index) => (
           <li
             key={index}
@@ -46,14 +46,14 @@ const ServiceCard = ({ service }) => (
 
 function Plan() {
   return (
-    <div className="mx-auto max-w-[1440px] p-10">
+    <div className="mx-auto max-w-[1440px] TB:p-10 p-5">
       <div className="flex flex-col gap-5 justify-center items-center">
         <div className="text-center text-[45px] font-bold font-cormorant leading-[51.57px]">
           Plan For Immigration
         </div>
         <img src="/IconP.svg" alt="Icon" className="h-[40px]" />
       </div>
-      <div className="grid grid-cols-1 NPC:grid-cols-3 gap-5 p-10">
+      <div className="grid grid-cols-1 NPC:grid-cols-3 gap-5 TB:p-10 p-5">
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} />
         ))}
