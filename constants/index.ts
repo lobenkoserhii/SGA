@@ -81,6 +81,14 @@ export const visaOptions = [
 
 export const testimonials = [
   {
+    name: "Liliia Rudych",
+    quote: "I can’t thank Spartak Gabroshvili and his team at SGA Immigration enough! Going through the Humanitarian and Compassionate Considerations program felt overwhelming at first, but with their guidance, everything became so much clearer and less stressful. Spartak was always patient, kind, and professional, taking the time to answer all my questions and address my concerns. His support gave me confidence throughout the process, and I’m so grateful for the positive outcome. If you need someone you can trust with your immigration case, I wholeheartedly recommend SGA Immigration.",
+  },
+  {
+    name: "Mykhailo Sobakar",
+    quote: "The immigration services provided were excellent and on point. Speaking from personal experience, the assistance with the Express Entry program through the Canadian experience class was outstanding. Spartak helped set up my online profile needed for the Permanent Residency application. He also guided me through the necessary actions, such as the English exam, medical exam, and estimate of fees. The whole process took about a year, but in the end, it was worth it. Price is reasonable, service is legit. I recommend.",
+  },
+  {
     name: "Анатолий Харченко",
     quote: "Обратился в SGA Immigration за консультацией по иммиграционным вопросам для себя и своей семьи. Сотрудники компании продемонстрировали высокий уровень профессионализма и внимания к деталям. Я был приятно удивлен, насколько чётко и ясно мне объяснили все этапы процесса, а также предоставили конкретные рекомендации, учитывая мои личные обстоятельства. Особенно хочу отметить работу с владельцем Спартаком, который не только компетентно проконсультировал, но и предложил несколько вариантов решения моего вопроса. Его подход к клиентам заслуживает отдельной похвалы — всегда на связи, готов выслушать и дать качественные советы.",
   },
@@ -117,6 +125,7 @@ export const testimonials = [
     quote: "I am highly recommending Spartak Gabroshvili for your immigration services. He helped us to receive Permanent Residency under H&C grounds for Ukrainian National.",
   },
 ];
+
 
 
 export const services = [
