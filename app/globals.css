@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Outfit:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'AcademyC-Bold';
+  src: url('/fonts/AcademyC-Bold.otf');
+  font-weight: bold;
+}
+
+html, body {
+  font-family:'Outfit', 'Cormorant Garamond';
+  height: 100%;
+  
+}
+
+* {
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress-container {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: black;
+  transition: width 2s ease;
+}
+
+.progress-knob {
+  position: absolute;
+  top: -2px; /* Centers the knob over the bar */
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  transition: left 2s ease;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.auto-width {
+  width: auto;
+}
+
+.auto-height {
+  height: auto;
+}
