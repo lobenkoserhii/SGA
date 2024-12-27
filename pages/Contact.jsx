@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Consultation from "../components/Consultation";
 import Footer from "../components/Footer";
 import FadeInSection from '../components/FadeInSection';
-import { InlineWidget } from 'react-calendly';
+import Form from '../components/Form';
 
 function Contact() {
   return (
@@ -16,29 +16,14 @@ function Contact() {
         </div>
       </FadeInSection>
 
-      {/* Calendly Inline Widget */}
-      <div className="bg-BG w-full font-outfit font-normal text-xl bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
-        <FadeInSection>
-          <div className="bg-[#1F2732] text-white w-full font-outfit font-normal text-xl rounded-lg shadow-lg">
-            <div className="w-full" style={{ height: '100vh', minHeight: '600px' }}>
-              <InlineWidget
-                url="https://calendly.com/s-v-lobenko/sga"
-                pageSettings={{
-                  backgroundColor: '#1A1C39',
-                  textColor: '#ffffff',
-                  primaryColor: '#D1B06B',
-                }}
-                styles={{
-                  height: '100%',
-                  width: '100%',
-                }}
-              />
-            </div>
-          </div>
-        </FadeInSection>
-      </div>
-
+      
+        
       <Consultation />
+        
+      <Form  />
+
+      
+      
       <Footer />
     </div>
   );

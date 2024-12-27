@@ -12,7 +12,7 @@ function Consultation() {
       <h2 className="text-4xl font-cormorant leading-[40px] font-medium mb-5">Professional immigration services tailored just for you!</h2>
 <p className="mb-6 font-outfit font-medium TB:text-lg ">Receive personalized support and expert guidance to make your immigration journey smooth and successful.</p>
 
-        <a href="#contact-us" className="p-3 mb-10 bg-Gold border-2 border-transparent hover:bg-transparent hover:border-Gold hover:text-white justify-center items-center inline-flex text-[#1F2732] text-xl font-medium font-outfit">
+        <a href="/#contact-us" className="p-3 mb-10 bg-Gold border-2 border-transparent hover:bg-transparent hover:border-Gold hover:text-white justify-center items-center inline-flex text-[#1F2732] text-xl font-medium font-outfit">
       Contact Us
     </a>
       </div>

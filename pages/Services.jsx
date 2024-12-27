@@ -46,6 +46,7 @@ const ServiceCard = ({ service }) => (
     <div className="font-outfit text-white font-bold">Get Started</div>
   </div>
 </Link>
+
   </div>
 );
 
