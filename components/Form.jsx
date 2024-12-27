@@ -47,7 +47,8 @@ function Form() {
   };
 
   return (
-    <div className="bg-[url('/BGForm.jpg')] w-full font-outfit font-normal text-xl h-[800px] bg-cover bg-no-repeat bg-center flex items-center justify-center">
+    
+    <div id="contact-us" className="bg-[url('/BGForm.jpg')] w-full font-outfit font-normal text-xl h-[800px] bg-cover bg-no-repeat bg-center flex items-center justify-center">
       <div className="bg-opacity-95 bg-BG text-white p-8 w-full max-w-4xl rounded-md shadow-md">
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>

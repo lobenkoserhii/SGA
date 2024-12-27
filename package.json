@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+<<<<<<< HEAD
     "lint": "next lint"
+=======
+    "lint": "next lint",
+>>>>>>> ed6ef1cdd5f06a76dbdc97326ef51f9d133c7f86
   },
   "dependencies": {
     "@vercel/analytics": "^1.3.1",
