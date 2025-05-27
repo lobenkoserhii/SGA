@@ -1,4 +1,5 @@
 'use client'
+import Head from 'next/head';
 import Layout from '../components/Layout'
 import React, { useState, useEffect } from 'react';
 import { testimonials } from "@/constants";  
@@ -53,6 +54,11 @@ const Testimonials = () => {
     }, []);
 
     return (
+      <>
+      <Head>
+  <title>Testimonials – SGA Immigration</title>
+  <meta name="description" content="Read what clients say about SGA Immigration & Legal Services." />
+</Head>
       <div className="bg-[url('/AboutUSBG.jpg')] w-full max-h-[700px] bg-cover bg-no-repeat bg-center">
         <FadeInSection>
         <Layout />
@@ -78,6 +84,7 @@ const Testimonials = () => {
         <Form/>
       <Footer/>
       </div>
+      </>
     );
 }
 

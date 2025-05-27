@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import Consultation from "../components/Consultation";
 import Footer from "../components/Footer";
@@ -7,6 +8,11 @@ import Form from '../components/Form';
 
 function Contact() {
   return (
+    <>
+    <Head>
+  <title>Contact – SGA Immigration</title>
+  <meta name="description" content="Get in touch with SGA Immigration & Legal Services. Book a consultation today." />
+</Head>
     <div className="bg-[url('/AboutUSBG.jpg')] w-full bg-cover bg-no-repeat bg-center">
       <FadeInSection>
         <Layout />
@@ -26,7 +32,9 @@ function Contact() {
       
       <Footer />
     </div>
+    </>
   );
 }
+
 
 export default Contact;

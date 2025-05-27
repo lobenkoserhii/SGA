@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import { visaTypes } from "@/constants";
 import Permanent from '../components/Permanent';
@@ -31,6 +32,11 @@ const permanentHighlightPhrases = [
 
 function Programs() {
   return (
+    <>
+    <Head>
+  <title>Programs – SGA Immigration</title>
+  <meta name="description" content="Explore immigration programs offered by SGA Immigration. Find the right path for you." />
+</Head>
     <div className="bg-[url('/AboutUSBG.jpg')] w-full max-h-[700px] bg-cover bg-no-repeat bg-center">
       <FadeInSection>
         <Layout />
@@ -93,6 +99,7 @@ function Programs() {
       <Form />
       <Footer />
     </div>
+    </>
   );
 }
 

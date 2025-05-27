@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from "next/link";
 import Layout from '../components/Layout';
 import { services, additionalServices } from "@/constants";
@@ -52,6 +53,11 @@ const ServiceCard = ({ service }) => (
 
 function Services() {
   return (
+    <>
+    <Head>
+  <title>Services – SGA Immigration</title>
+  <meta name="description" content="Discover professional immigration services from licensed consultants at SGA Immigration." />
+</Head>
     <div className="bg-[url('/AboutUSBG.jpg')] w-full max-h-[700px] bg-cover bg-no-repeat bg-center">
       <FadeInSection>
         <Layout />
@@ -85,6 +91,7 @@ function Services() {
       <Consultation />
       <Footer />
     </div>
+    </>
   );
 }
 
