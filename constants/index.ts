@@ -81,6 +81,30 @@ export const visaOptions = [
 
 export const testimonials = [
   {
+    name: "Oleksandr Konovalov",
+    quote: "Spartak was incredibly helpful with my immigration process in Canada. He helped me extend my work permit and apply for PR. Everything was smooth and professional — highly recommend his services!",
+  },
+  {
+    name: "Anna Zalotina",
+    quote: "I highly recommend Spartak! A true professional and a wonderful person. Always ready to answer any questions and provide real help. The process was much easier and less stressful thanks to his support.",
+  },
+  {
+    name: "Alex Rimko",
+    quote: "Amazing consultation and results! Spartak helped many of my friends through his dedication, professionalism and deep understanding of client's needs.",
+  },
+  {
+    name: "Liubov Boichuk",
+    quote: "Spartak provided exceptional support in our immigration process. He was incredibly efficient, making the entire process smooth and fast. We are extremely grateful for the professional and reliable service. Highly recommend!",
+  },
+  {
+    name: "Евгения Лукьянова",
+    quote: "I would like to recommend Spartak as a qualified and experienced immigration consultant. Thank you for your help and timely, useful advice.",
+  },
+  {
+    name: "Denisa Mala",
+    quote: "Spartak is an outstanding lawyer—professional, knowledgeable, and genuinely dedicated. He guided me through every step with clarity and care, ensuring the best possible outcome. Highly recommend his services!",
+  },
+  {
     name: "Liliia Rudych",
     quote: "I can’t thank Spartak Gabroshvili and his team at SGA Immigration enough! Going through the Humanitarian and Compassionate Considerations program felt overwhelming at first, but with their guidance, everything became so much clearer and less stressful. Spartak was always patient, kind, and professional, taking the time to answer all my questions and address my concerns. His support gave me confidence throughout the process, and I’m so grateful for the positive outcome. If you need someone you can trust with your immigration case, I wholeheartedly recommend SGA Immigration.",
   },
